@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News - FinanceSite</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="apple-inspired.css"> <!-- Optional: Link Apple styles if desired -->
+    <style>
+        /* Basic styles for news listing page */
+        .news-listing-header {
+            text-align: center;
+            padding: var(--space-xl) 0;
+            background-color: var(--color-light-gray); /* Or another subtle background */
+            margin-bottom: var(--space-xl);
+        }
+        .news-listing-header h1 {
+            font-size: var(--font-size-xxxl);
+            color: var(--color-text-primary);
+            margin-bottom: var(--space-xs);
+        }
+        .news-listing-header p {
+            font-size: var(--font-size-large);
+            color: var(--color-text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .news-grid-container {
+            max-width: 1200px;
+            margin: 0 auto var(--space-xxl) auto;
+            padding: 0 var(--space-md);
+        }
+
+        /* Re-use news-grid and news-item styles from styles.css */
+        /* Add any specific overrides if needed */
+
+        .pagination {
+            text-align: center;
+            margin-top: var(--space-xl);
+        }
+        .pagination a, .pagination span {
+            display: inline-block;
+            padding: var(--space-xs) var(--space-sm);
+            margin: 0 var(--space-xxs);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius-small);
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .pagination a:hover {
+            background-color: var(--color-accent-light);
+            color: var(--color-accent);
+            border-color: var(--color-accent-light);
+        }
+        .pagination .current {
+            background-color: var(--color-accent);
+            color: var(--color-white);
+            border-color: var(--color-accent);
+            font-weight: var(--font-weight-semibold);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">FinanceSite</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="news.html">News</a></li> <!-- Added link to news -->
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="search-button" aria-label="Open search">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                    <path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- News Listing Header -->
+    <section class="news-listing-header">
+        <h1>Latest News</h1>
+        <p>Stay updated with the latest happenings in the world of finance.</p>
+    </section>
+
+    <!-- Main News Grid -->
+    <main class="news-grid-container">
+        <div class="news-grid">
+            <!-- Placeholder News Item 1 -->
+            <article class="news-item">
+                <a href="news-article.html" class="news-item-link" aria-label="Read more about Market Trends Q4">
+                    <div class="news-item-image">
+                        <img src="https://via.placeholder.com/400x250/e0e0e0/cccccc?text=News+1" alt="Placeholder News Image 1" loading="lazy">
+                    </div>
+                    <div class="news-item-content">
+                        <h3 class="news-item-title">Market Trends Q4 Analysis</h3>
+                        <p class="news-item-excerpt">A deep dive into the financial market performance in the last quarter...</p>
+                        <span class="read-more">Read More &rarr;</span>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Placeholder News Item 2 -->
+            <article class="news-item">
+                <a href="news-article.html" class="news-item-link" aria-label="Read more about Investment Strategies 2024">
+                    <div class="news-item-image">
+                        <img src="https://via.placeholder.com/400x250/d0d0d0/b0b0b0?text=News+2" alt="Placeholder News Image 2" loading="lazy">
+                    </div>
+                    <div class="news-item-content">
+                        <h3 class="news-item-title">Investment Strategies for 2024</h3>
+                        <p class="news-item-excerpt">Exploring potential investment opportunities for the upcoming year...</p>
+                        <span class="read-more">Read More &rarr;</span>
+                    </div>
+                </a>
+            </article>
+
+            <!-- Placeholder News Item 3 -->
+            <article class="news-item">
+                <a href="news-article.html" class="news-item-link" aria-label="Read more about Fintech Innovations">
+                    <div class="news-item-image">
+                        <img src="https://via.placeholder.com/400x250/c0c0c0/a0a0a0?text=News+3" alt="Placeholder News Image 3" loading="lazy">
+                    </div>
+                    <div class="news-item-content">
+                        <h3 class="news-item-title">Fintech Innovations Shaping Finance</h3>
+                        <p class="news-item-excerpt">How new technologies are transforming the financial landscape...</p>
+                        <span class="read-more">Read More &rarr;</span>
+                    </div>
+                </a>
+            </article>
+
+             <!-- Placeholder News Item 4 -->
+            <article class="news-item">
+                <a href="news-article.html" class="news-item-link" aria-label="Read more about Global Economic Outlook">
+                    <div class="news-item-image">
+                        <img src="https://via.placeholder.com/400x250/b0b0b0/909090?text=News+4" alt="Placeholder News Image 4" loading="lazy">
+                    </div>
+                    <div class="news-item-content">
+                        <h3 class="news-item-title">Global Economic Outlook Update</h3>
+                        <p class="news-item-excerpt">Key factors influencing the global economy this month...</p>
+                        <span class="read-more">Read More &rarr;</span>
+                    </div>
+                </a>
+            </article>
+
+             <!-- Add more placeholder news items as needed -->
+
+        </div>
+
+        <!-- Pagination -->
+        <nav class="pagination" aria-label="News pagination">
+            <span class="current">1</span>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <span>...</span>
+            <a href="#">10</a>
+            <a href="#">Next &rarr;</a>
+        </nav>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-about">
+                <h3>FinanceSite</h3>
+                <p>Your trusted source for financial news and insights. Making complex finance simple.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="news.html">News</a></li> <!-- Added link to news -->
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <a href="#" aria-label="Facebook"><img src="icons/facebook.svg" alt="Facebook"></a>
+                <a href="#" aria-label="Twitter"><img src="icons/twitter.svg" alt="Twitter"></a>
+                <a href="#" aria-label="LinkedIn"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Sulav Notes. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html> 
